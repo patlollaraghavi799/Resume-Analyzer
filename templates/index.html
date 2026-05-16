@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Resume Analyzer</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+
+Resume Analyzer
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="tag">
+ATS Optimized
+</div>
+
+<h1>
+Smart Resume Check
+Fast & Free
+</h1>
+
+<p>
+Improve ATS score and optimize your resume instantly
+</p>
+
+<form
+action="/upload"
+method="POST"
+enctype="multipart/form-data">
+
+<div class="upload-box">
+
+<input
+type="file"
+name="resume"
+accept=".pdf"
+required>
+
+<button>
+Upload Resume
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+
+<section class="features">
+
+<h2>Key Features</h2>
+
+<div class="cards">
+
+<div class="feature-card">
+
+<h3>ATS Scan</h3>
+
+<p>
+Checks ATS compatibility
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>Keyword Match</h3>
+
+<p>
+Find missing skills
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>Formatting Review</h3>
+
+<p>
+Cleaner professional resume
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+
+</html>

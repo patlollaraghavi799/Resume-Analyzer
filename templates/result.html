@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Results</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="result-card">
+
+<h1>Resume Analysis</h1>
+
+<div class="score">
+
+{{score}}%
+
+</div>
+
+<h2>{{feedback}}</h2>
+
+<h3>Suggestions</h3>
+
+<ul>
+
+{% for item in suggestions %}
+
+<li>{{item}}</li>
+
+{% endfor %}
+
+</ul>
+<form action="/">
+
+<button type="submit">
+Analyze Again
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
